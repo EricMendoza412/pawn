@@ -1,0 +1,159 @@
+{
+ "actions": [],
+ "autoname": ".########",
+ "creation": "2021-06-10 14:09:35.565026",
+ "description": "Pawn Ticket",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date_l",
+  "maturity_date",
+  "expiry_date",
+  "column_break_4",
+  "pawn_type",
+  "customer",
+  "customer_name",
+  "section_break_7",
+  "pawn_ticket_items",
+  "section_break_9",
+  "principal",
+  "interest",
+  "net_proceeds",
+  "main_appraiser",
+  "assistant_appraiser",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "date_l",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date Loan Granted",
+   "reqd": 1
+  },
+  {
+   "fieldname": "maturity_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Maturity Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "expiry_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Expiry Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "customer.customer_name",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "customer.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "principal",
+   "fieldtype": "Currency",
+   "label": "Principal",
+   "options": "Company:company:default_currency",
+   "reqd": 1
+  },
+  {
+   "fieldname": "interest",
+   "fieldtype": "Currency",
+   "label": "Interest",
+   "options": "Company:company:default_currency",
+   "reqd": 1
+  },
+  {
+   "fieldname": "net_proceeds",
+   "fieldtype": "Currency",
+   "label": "Net Proceeds",
+   "options": "Company:company:default_currency",
+   "reqd": 1
+  },
+  {
+   "fieldname": "main_appraiser",
+   "fieldtype": "Data",
+   "label": "Main Appraiser"
+  },
+  {
+   "fieldname": "assistant_appraiser",
+   "fieldtype": "Data",
+   "label": "Assistant Appraiser"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Pawn Ticket",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "pawn_ticket_items",
+   "fieldtype": "Table",
+   "label": "Pawn Ticket Items",
+   "options": "Pawn Ticket Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Jewelry",
+   "fieldname": "pawn_type",
+   "fieldtype": "Select",
+   "label": "Pawn Type",
+   "options": "Gadget\nJewelry",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-06-24 11:47:03.463041",
+ "modified_by": "Administrator",
+ "module": "Pawnshop Management",
+ "name": "Pawn Ticket",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

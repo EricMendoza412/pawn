@@ -1,0 +1,48 @@
+{
+ "actions": [],
+ "creation": "2021-06-17 10:54:12.970253",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "gadget_interest_rate",
+  "jewelry_interest_rate"
+ ],
+ "fields": [
+  {
+   "default": "7",
+   "fieldname": "gadget_interest_rate",
+   "fieldtype": "Percent",
+   "label": "Gadget Interest Rate"
+  },
+  {
+   "default": "5",
+   "fieldname": "jewelry_interest_rate",
+   "fieldtype": "Percent",
+   "label": "Jewelry Interest Rate"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2021-06-17 10:54:12.970253",
+ "modified_by": "Administrator",
+ "module": "Pawnshop Management",
+ "name": "Pawnshop Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

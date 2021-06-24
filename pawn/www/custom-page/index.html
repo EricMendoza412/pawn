@@ -1,0 +1,21 @@
+<div>
+
+<b>Hello {{ user }}</b>
+
+<br />
+Customer List
+<p>
+    <ul>
+        {% for item in customers %}
+            <li>{{ item.name }}</li>
+        {% endfor %}
+    </ul>
+</p>
+
+</div>
+
+<div>
+    {% set branch = frappe.get_doc('Branch', 'Rosario') %}
+    Rosario Branch Code: {{ branch.branch_code }}
+
+</div>
